@@ -47,7 +47,8 @@
             tools:replace="android:theme" />
         <activity android:name=".login" />
         <activity android:name=".signUp" />
-        <activity android:name=".pdf_list"></activity>
+        <activity android:name=".pdf_list" />
+        <activity android:name=".pdf_view"></activity>
     </application>
 
 </manifest>

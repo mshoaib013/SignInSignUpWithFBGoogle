@@ -1,5 +1,6 @@
 package com.google.firebase.quickstart.auth;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,6 +39,8 @@ public class pdf_list extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(pdf_list.this,String.valueOf(position),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(pdf_list.this,pdf_view.class);
+                startActivity(intent);
             }
         });
     }

@@ -37,6 +37,8 @@ configurations.all {
 }
 
 dependencies {
+    compile 'com.github.barteksc:android-pdf-viewer:3.0.0-beta.5'
+
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:multidex:1.0.3'
 
