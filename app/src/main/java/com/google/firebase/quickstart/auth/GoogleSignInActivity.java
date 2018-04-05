@@ -195,6 +195,10 @@ public class GoogleSignInActivity extends BaseActivity implements
             String fullName = mAuth.getCurrentUser().getDisplayName();
             String email = mAuth.getCurrentUser().getEmail();
             String phone=mAuth.getCurrentUser().getPhoneNumber();
+
+            //*******************************************************************************************************************************************
+            //*******************************************************************************************************************************************
+            //*******************************************************************************************************************************************
             Log.d("muhahaha", "signInWithCredential:success "+ user+" "+fullName+ " "+phone+" "+email);
 
             mStatusTextView.setText(getString(R.string.google_status_fmt, user.getEmail()));
@@ -202,6 +206,10 @@ public class GoogleSignInActivity extends BaseActivity implements
 
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
+
+            //********************************************************************************************************************************************
+            Intent intent=new Intent(GoogleSignInActivity.this,pdf_list.class);
+            startActivity(intent);
         } else {
             mStatusTextView.setText(R.string.signed_out);
             mDetailTextView.setText(null);

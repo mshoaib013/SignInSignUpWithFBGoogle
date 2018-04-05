@@ -194,6 +194,10 @@ public class FacebookLoginActivity extends BaseActivity implements
 
             findViewById(R.id.button_facebook_login).setVisibility(View.GONE);
             findViewById(R.id.button_facebook_signout).setVisibility(View.VISIBLE);
+
+            //********************************************************************************************************************************
+            Intent intent=new Intent(FacebookLoginActivity.this,pdf_list.class);
+            startActivity(intent);
         } else {
             mStatusTextView.setText(R.string.signed_out);
             mDetailTextView.setText(null);

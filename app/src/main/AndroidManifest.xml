@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ChooserActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,7 +46,8 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             tools:replace="android:theme" />
         <activity android:name=".login" />
-        <activity android:name=".signUp"></activity>
+        <activity android:name=".signUp" />
+        <activity android:name=".pdf_list"></activity>
     </application>
 
 </manifest>
