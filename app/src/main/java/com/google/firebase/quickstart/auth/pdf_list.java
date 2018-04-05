@@ -10,6 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -17,6 +20,16 @@ public class pdf_list extends AppCompatActivity {
 
     private ArrayAdapter<String> listAdapter ;
     ListView pdfList;
+    private FirebaseAuth mAuth;
+
+
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+        super.onBackPressed();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
