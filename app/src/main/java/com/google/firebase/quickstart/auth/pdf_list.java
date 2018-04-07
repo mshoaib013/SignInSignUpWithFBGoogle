@@ -40,6 +40,7 @@ public class pdf_list extends AppCompatActivity {
 
 
         String[] pdfNames = new String[] { "Pdf 1", "pdf two", "pdf three", "Mars",
+                "Jupiter", "Saturn", "Uranus", "Neptune","Pdf 1", "pdf two", "pdf three", "Mars",
                 "Jupiter", "Saturn", "Uranus", "Neptune"};
         final ArrayList<String> list = new ArrayList<String>();
         list.addAll(Arrays.asList(pdfNames));
